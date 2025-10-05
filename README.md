@@ -311,7 +311,7 @@ The generated rewriting result format is as follows:
 {"id": 47923, "feedback": ["Synaptic knobs are the rounded areas...", "Synaptic knobs are the terminal part...", ......]}
 ```
 
-Then, We can integrate them into our retrieval process and evaluate the results:
+Then, we can integrate them into our retrieval process and evaluate the results:
 ```bash
 python src/retrieve.py \
     --qrels_path BEIR/dl2019/qrels/test.tsv \
@@ -331,7 +331,7 @@ python src/retrieve.py \
     --qrels_path BEIR/dl2019/qrels/test.tsv \
     --queries_path BEIR/dl2019/queries.jsonl \
     --corpus_path BEIR/dl2019/format_corpus.jsonl \
-    --index_path data/$dl2019/index/e5-base-v2_Flat.index \
+    --index_path data/dl2019/index/e5-base-v2_Flat.index \
     --output_path data/dl2019/result/GPRF_e5-base-v2.jsonl \
     --feedback_path data/dl2019/rewrite/gprf_e5-base-v2_Llama3B.jsonl \
     --feedback_topk 10 \
