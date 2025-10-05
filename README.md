@@ -313,6 +313,8 @@ The generated rewriting result format is as follows:
 
 Then, we can integrate them into our retrieval process and evaluate the results:
 ```bash
+mkdir -p data/dl2019/result
+
 python src/retrieve.py \
     --qrels_path BEIR/dl2019/qrels/test.tsv \
     --queries_path BEIR/dl2019/queries.jsonl \
