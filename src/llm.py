@@ -139,25 +139,6 @@ def LameR(config, args):
                 'text' : text
             }) + '\n')
 
-'''
-def QPRF(config, args):
-    model = get_generator(config)
-    
-    qids, queries = load_qids_and_queries(args.qrels_path, args.queries_path)
-    results = load_result_list(qids, args.corpus_path, args.result_path, args.result_topk)
-    prompt_template = QPRFPromptTemplate(config)
-    
-    input_prompts = [prompt_template.get_string(question=q, passages=result) for q,result in tqdm(zip(queries, results))]
-    
-    preds = model.generate(input_prompts)  
-    
-    with open(args.output_path, 'w') as fw:
-        for qid, pred in zip(qids, preds):
-            fw.write(json.dumps({
-                'id' : qid,
-                'feedback' : pred
-            }) + '\n')
-'''
 
 def QRG(config, args):
     model = get_generator(config)
