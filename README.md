@@ -1,5 +1,5 @@
 # GPRF
-Generalized Pseudo-Relevance Feedback
+Code of our WWW26 paper: *Generalized Pseudo-Relevance Feedback*
 
 ## 0. Requirements
 We implement the training and RAG pipeline based on [Swift](https://github.com/modelscope/ms-swift) and [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG) respectively. Please install them according to their requirements.
